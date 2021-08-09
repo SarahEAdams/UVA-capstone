@@ -1,0 +1,7 @@
+
+
+We are able to predict the DFI in your area using Machine Learning technique: Random Forest (RF). The RF model is built on decision trees. Decision trees can be described as a series of cascading questions. Each question adds a decision point that helps us get closer to the predicted DFI. RF models operate as an ensemble - meaning they are a combination of a number of trees. The combination provides us with high accuracy in our predictions but also adds complexity to the explainability of the model. 
+
+The goal of our model was to predict DFI for each zip code in the United States. The inputs of our model are 45 Census variables from the 2014-2019. The variables included gave us a good understand of the demographic and socioeconomic make up of communities based on their zip code. The model was trained with Census data matched to the DFI generated from the original EFF data. The model was tested on a small test set with 92.33% accuracy. The DFI predictions for all United States was done out of sample and therefore accuracy was not calculated. 
+
+All 45 Census features were included in the model. Below are the 10 features that contributed most to the model. As you can see the total population of a zip code, the racial and socioeconomic make up, veteran status, and education are important features in our model. 

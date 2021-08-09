@@ -198,7 +198,7 @@ elif page == "About the Data":
 	with data_sources: 
 		st.title("Data Sources")
 
-		data_sources_markdown = read_markdown_file("markdown/AboutTheData_DataSources.md")
+		data_sources_markdown = read_markdown_file("AboutTheData_DataSources.md")
 		st.markdown(data_sources_markdown, unsafe_allow_html=True) 
 
 
@@ -206,7 +206,7 @@ elif page == "About the Data":
 	with DFI_section: 
 		st.title("How is the DFI Calculated?")
 
-		IRT_markdown = read_markdown_file("markdown/AboutTheData_IRT.md")
+		IRT_markdown = read_markdown_file("AboutTheData_IRT.md")
 		st.markdown(IRT_markdown, unsafe_allow_html=True)
 
 		image = Image.open("images/irtcurves.jpg")
@@ -216,14 +216,11 @@ elif page == "About the Data":
 	with RF_section: 
 		st.title("How is the DFI in my area calculated?")
 
-		RF_markdown = read_markdown_file("markdown/AboutTheData_RF.md")
+		RF_markdown = read_markdown_file("AboutTheData_RF.md")
 		st.markdown(RF_markdown, unsafe_allow_html=True)
 
 		image = Image.open("images/feature_importance.png")
 		st.image(image, caption='Random Forest Model Feature Importance.', use_column_width=True)
-
-		RF_features_markdown = read_markdown_file("markdown/AboutTheData_RF_feature_importance.md")
-		st.markdown(RF_features_markdown, unsafe_allow_html=True)
 
 ## Take Action
 
@@ -238,7 +235,7 @@ elif page == "Take Action":
 
 		st.title("How can I get involved?")
 
-		TakeAction_markdown = read_markdown_file("markdown/TakeAction.md")
+		TakeAction_markdown = read_markdown_file("TakeAction.md")
 		st.markdown(TakeAction_markdown, unsafe_allow_html=True)
 
 
@@ -249,6 +246,6 @@ elif page == "Meet the Team":
 	with team: 
 		st.title("Meet the team")
 		
-		MeetTheTeam_markdown = read_markdown_file("markdown/MeetTheTeam.md")
+		MeetTheTeam_markdown = read_markdown_file("MeetTheTeam.md")
 		st.markdown(MeetTheTeam_markdown, unsafe_allow_html=True)
 
