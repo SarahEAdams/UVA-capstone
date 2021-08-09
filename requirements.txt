@@ -6,7 +6,6 @@ json5==0.9.1
 jsonschema==3.2.0
 plotly==5.1.0
 Pillow==7.0.0
-mkl-random==1.1.0
 mpmath==1.1.0
 pathlib2==2.3.5
 requests==2.25.1
