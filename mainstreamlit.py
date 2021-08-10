@@ -238,6 +238,8 @@ elif page == "Take Action":
 		TakeAction_markdown = read_markdown_file("TakeAction.md")
 		st.markdown(TakeAction_markdown, unsafe_allow_html=True)
 
+		st.markdown("## If you're interested in getting involved with this project, more information is coming soon!")
+
 
 elif page == "Meet the Team":
 
@@ -246,6 +248,32 @@ elif page == "Meet the Team":
 	with team: 
 		st.title("Meet the team")
 		
-		MeetTheTeam_markdown = read_markdown_file("MeetTheTeam.md")
-		st.markdown(MeetTheTeam_markdown, unsafe_allow_html=True)
+		st.markdown("### Sarah Adams") 
+
+		col1, col2 = st.columns([3, 5])
+		Sarahimage = Image.open('images/SarahAdams.jpg')
+		with col1:
+			st.image(Sarahimage, width=250)
+		with col2:
+			st.markdown("Sarah is a recent graduate of University of Virginia's School of Data Science and a Data Analyst and Visualization Specialist at the UVA's School of Education. She is a Virginia native who you can find on [Twitter](https://twitter.com/sarah_adams_) and [LinkedIn](https://www.linkedin.com/in/sarah-adams-link/)!")
+			#st.markdown('<h1 style="color: white;">Low Digital Force</h1>', unsafe_allow_html=True)
+
+
+		st.markdown("### Claire Setser") 
+
+		col1, col2 = st.columns([3, 5])
+		Claireimage = Image.open('images/ClaireSetser.png')
+		with col1:
+			st.image(Claireimage, width=250)
+		with col2:
+			st.markdown("Claire is a recent graduate of University of Virginia's School of Data Science and a Data Analyst and Consultant in Minneapolis, Minnesota. You can find Claire on [LinkedIn](https://www.linkedin.com/in/claireasetser/)! ")
+
+		st.markdown("### Renèe Cummings") 
+
+		col1, col2 = st.columns([3, 5])
+		Reneeimage = Image.open('images/ReneeCummings.jpeg')
+		with col1:
+			st.image(Reneeimage, width=250)
+		with col2:
+			st.markdown("Renée is a AI Ethicist, Criminologist, and Data Activist at University of Virginia's School of Data Science. You can find Renée and information about her upcoming talks on [LinkedIn](https://www.linkedin.com/in/ren%C3%A9ecummings/)! ")
 
